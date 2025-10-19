@@ -1,0 +1,29 @@
+
+CXX 				= c++
+CPPFLAGS 			= -Wall -Wextra -Werror -std=c++98
+NAME 				= zombie
+SRC 				= Zombie.cpp main.cpp newZombie.cpp randomChunk.cpp
+
+OBJ 				= $(SRC:.cpp=.o)
+
+
+# Rule to compile and link only when necessary
+$(NAME): $(OBJ)
+	$(CXX) $(CPPFLAGS) -o $(NAME) $(OBJ)
+
+# Rule to compile .cpp files into .o files (Prevents unnecessary relinking)
+%.o: %.cpp
+	$(CXX) $(CPPFLAGS) -c $< -o $@ 
+
+
+all: $(NAME) 
+
+re: fclean all
+
+clean:
+	rm -f $(OBJ)
+
+fclean: clean
+	rm -f $(NAME)
+
+.PHONY: clean fclean re all
