@@ -6,7 +6,7 @@
 /*   By: asemykin <asemykin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 00:11:01 by asemykin          #+#    #+#             */
-/*   Updated: 2025/10/20 00:15:13 by asemykin         ###   ########.fr       */
+/*   Updated: 2025/10/20 00:35:47 by asemykin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int main()
 {
-    Zombie *zombie = newZombie("Zombie 1");
-    randomChunk("Zombie 2");
+    Zombie *zombie = newZombie("Zombie_1");
+    randomChunk("Zombie_2");
     delete zombie;
     return 0;
 }

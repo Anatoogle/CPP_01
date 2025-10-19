@@ -6,7 +6,7 @@
 /*   By: asemykin <asemykin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 00:07:09 by asemykin          #+#    #+#             */
-/*   Updated: 2025/10/20 00:17:55 by asemykin         ###   ########.fr       */
+/*   Updated: 2025/10/20 00:35:25 by asemykin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ Zombie::Zombie(std::string name)
 
 Zombie::~Zombie()
 {
-    std::cout << "Aaarrrrggghh..." << std::endl;
+    std::cout << "Aaarrrrggghh... " << std::endl;
 }
 
 void Zombie::announce()
