@@ -1,28 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asemykin <asemykin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/20 00:07:09 by asemykin          #+#    #+#             */
-/*   Updated: 2025/10/20 10:14:02 by asemykin         ###   ########.fr       */
+/*   Created: 2025/10/21 00:37:52 by asemykin          #+#    #+#             */
+/*   Updated: 2025/10/21 00:52:32 by asemykin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include <iostream>
+#include "../includes/replace.hpp"
 
-Zombie::Zombie(std::string name)
+int main(int argc, char **argv)
 {
-    _name = name;
-}
+    if(argc != 4)
+        return 0;
 
-Zombie::~Zombie()
-{
-    std::cout << _name << " Aaarrrrggghh... " << std::endl;
-}
-
-void Zombie::announce()
-{
-    std::cout << _name << " BraiiiiiiinnnzzzZ... " << std::endl;
+    if(replace(argv[1], argv[3], argv[3]))
+        return 0;
+    else
+        return 1;
 }

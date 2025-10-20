@@ -5,24 +5,22 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: asemykin <asemykin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/20 00:07:09 by asemykin          #+#    #+#             */
-/*   Updated: 2025/10/20 10:14:02 by asemykin         ###   ########.fr       */
+/*   Created: 2025/10/20 10:12:35 by asemykin          #+#    #+#             */
+/*   Updated: 2025/10/20 12:15:10 by asemykin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "../includes/Zombie.hpp"
 
-Zombie::Zombie(std::string name)
-{
-    _name = name;
-}
+Zombie::Zombie() 
+{}
 
 Zombie::~Zombie()
 {
-    std::cout << _name << " Aaarrrrggghh... " << std::endl;
+    std::cout << _name << " Aarrgggghhhh..." << std::endl;
 }
 
 void Zombie::announce()
 {
-    std::cout << _name << " BraiiiiiiinnnzzzZ... " << std::endl;
+    std::cout << _name << " BRAINZZZZ..." << std::endl;
 }
