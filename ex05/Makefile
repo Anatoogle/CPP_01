@@ -1,13 +1,12 @@
-NAME      = unneccessaryviolence
+NAME      = harl20
 
 CXX       = c++
 CPPFLAGS  = -Wall -Wextra -Werror -std=c++98
 
 SRC_DIR	  = src
 SRC       = $(SRC_DIR)/main.cpp \
-			$(SRC_DIR)/Weapon.cpp \
-			$(SRC_DIR)/HumanA.cpp \
-			$(SRC_DIR)/HumanB.cpp
+			$(SRC_DIR)/Harl.cpp
+
 OBJ_DIR   = obj
 OBJ       = $(SRC:$(SRC_DIR)/%.cpp=$(OBJ_DIR)/%.o)
 
@@ -33,7 +32,7 @@ $(OBJ_DIR):
 
 # Cleaning rules
 clean:
-	rm -rf $(OBJ_DIR)/*.o
+	rm -f $(OBJ_DIR)/*.o
 
 
 fclean: clean

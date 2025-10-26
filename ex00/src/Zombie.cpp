@@ -1,19 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   randomChunk.cpp                                    :+:      :+:    :+:   */
+/*   Zombie.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asemykin <asemykin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/20 00:09:53 by asemykin          #+#    #+#             */
-/*   Updated: 2025/10/20 00:15:22 by asemykin         ###   ########.fr       */
+/*   Created: 2025/10/20 00:07:09 by asemykin          #+#    #+#             */
+/*   Updated: 2025/10/23 01:24:05 by asemykin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "../includes/Zombie.hpp"
 
-void randomChunk(std::string name)
+Zombie::Zombie(std::string name)
 {
-    Zombie zombie = Zombie(name);
-    zombie.announce();
+    _name = name;
+}
+
+Zombie::~Zombie()
+{
+    std::cout << _name << " Aaarrrrggghh... " << std::endl;
+}
+
+void Zombie::announce()
+{
+    std::cout << _name << " BraiiiiiiinnnzzzZ... " << std::endl;
 }

@@ -32,7 +32,7 @@ $(OBJ_DIR):
 
 # Cleaning rules
 clean:
-	rm -rf $(OBJ_DIR)
+	rm -rf $(OBJ_DIR)/*.o
 
 
 fclean: clean

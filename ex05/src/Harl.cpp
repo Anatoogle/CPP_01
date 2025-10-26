@@ -1,20 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   newZombie.cpp                                      :+:      :+:    :+:   */
+/*   Harl.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asemykin <asemykin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/20 00:08:32 by asemykin          #+#    #+#             */
-/*   Updated: 2025/10/20 00:09:31 by asemykin         ###   ########.fr       */
+/*   Created: 2025/10/23 01:00:32 by asemykin          #+#    #+#             */
+/*   Updated: 2025/10/23 01:13:39 by asemykin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "../includes/Harl.hpp"
 
-Zombie *newZombie(std::string name)
+void Harl::complain(std::string level)
 {
-    Zombie *zombie = new Zombie(name);
-    zombie->announce();
-    return (zombie);   
+    (void)level;
 }
