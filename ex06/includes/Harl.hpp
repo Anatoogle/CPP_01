@@ -1,30 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asemykin <asemykin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/23 00:55:35 by asemykin          #+#    #+#             */
-/*   Updated: 2025/10/28 08:17:51 by asemykin         ###   ########.fr       */
+/*   Created: 2025/10/23 00:56:16 by asemykin          #+#    #+#             */
+/*   Updated: 2025/10/23 01:00:16 by asemykin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/Harl.hpp"
+#pragma once
 
-int main()
+#include <iostream>
+
+class Harl
 {
-    Harl harl;
-    
-    std::cout   << "Talk to Harl: 'DEBUG' 'INFO' 'WARNING' 'ERROR' or exit with 'EXIT'\n" << std::endl;
-    std::string command;
-    
-    while(1)
-    {        
-        std::getline(std::cin, command);
-        if(command == "EXIT")
-            break;
-        harl.complain(command);
-    }
-    return 0;
-}
+private:
+    void debug(void);
+    void info(void);
+    void warning(void);
+    void error(void);
+public:
+    Harl();
+    ~Harl();
+    void complain(std::string level);
+};
