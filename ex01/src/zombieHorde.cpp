@@ -6,11 +6,13 @@
 /*   By: asemykin <asemykin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 10:21:05 by asemykin          #+#    #+#             */
-/*   Updated: 2025/10/21 00:27:43 by asemykin         ###   ########.fr       */
+/*   Updated: 2025/11/11 11:53:55 by asemykin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/Zombie.hpp"
+
+#include <sstream>
 
 Zombie *zombieHorde(int N, std::string name)
 {
@@ -24,8 +26,12 @@ Zombie *zombieHorde(int N, std::string name)
     
     for(int i = 0; i < N; i++)
     {
-        zombie[i].setName(name);
-        std::cout << i << " " ;
+        std::string s ;
+        std::stringstream out;
+        out << i+1;
+        s = out.str();
+        
+        zombie[i].setName(name + s);
         zombie[i].announce();
     }
     return zombie;
