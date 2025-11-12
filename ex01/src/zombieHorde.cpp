@@ -6,7 +6,7 @@
 /*   By: asemykin <asemykin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 10:21:05 by asemykin          #+#    #+#             */
-/*   Updated: 2025/11/11 11:53:55 by asemykin         ###   ########.fr       */
+/*   Updated: 2025/11/12 11:01:31 by asemykin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,9 @@ Zombie *zombieHorde(int N, std::string name)
     
     for(int i = 0; i < N; i++)
     {
-        std::string s ;
         std::stringstream out;
         out << i+1;
-        s = out.str();
+        std::string s = out.str();
         
         zombie[i].setName(name + s);
         zombie[i].announce();

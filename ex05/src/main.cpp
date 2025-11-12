@@ -6,7 +6,7 @@
 /*   By: asemykin <asemykin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 00:55:35 by asemykin          #+#    #+#             */
-/*   Updated: 2025/10/28 08:17:51 by asemykin         ###   ########.fr       */
+/*   Updated: 2025/11/12 10:29:48 by asemykin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ int main()
     
     while(1)
     {        
+        if(std::cin.eof())
+            break;
         std::getline(std::cin, command);
         if(command == "EXIT")
             break;
