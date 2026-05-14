@@ -2,9 +2,12 @@ This project has been created as part of the 42 curriculum by asemykin
 
 # C++ - Module 01
 
-The CPP modules at 42 Wolfsburg teach Object-Oriented Programming in C++ step by step, covering everything from basic classes to advanced concepts
+The CPP modules at 42 Wolfsburg teach Object-Oriented Programming in C++ step by step, covering everything from basic classes to advanced concepts.
 
-Module 01: Memory allocation, pointers to members, references and switch statements
+## Concepts
+
+Memory allocation, pointers to members, references and switch statements
+
 
 ---
 
@@ -13,19 +16,19 @@ Module 01: Memory allocation, pointers to members, references and switch stateme
 ### Compiling
 
 - With c++ and the flags -Wall -Wextra -Werror
-- Your code should still compile if you add the flag -std=c++98
+- Your code must also compile with the flag -std=c++98
 
 ---
 
 ### Forbidden
 
-- C++11 (and derived forms) and Boost libraries are forbidden
+- C++11 (and derived forms) and Boost libraries
 - *printf(), *alloc() and free()
-- No STL. That means: no Containers (vector/list/map, and so forth) and no Algorithms.
+- STL containers and algorithms (vector, list, map, etc.)
 
 ---
 
 ### Requirements
 
 - No memory leaks
-- Classes must be designed in the Orthodox Canonical Form, except when explicitly stated otherwise
+- Classes must follow the Orthodox Canonical Form unless stated otherwise
