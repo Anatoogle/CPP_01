@@ -15,8 +15,8 @@ Memory allocation, pointers to members, references and switch statements
 
 ### Compiling
 
-- With c++ and the flags -Wall -Wextra -Werror
-- Your code must also compile with the flag -std=c++98
+- Compile with `c++` using the flags `-Wall -Wextra -Werror`
+- Your code must also compile with `-std=c++98`
 
 ---
 
