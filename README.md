@@ -8,7 +8,6 @@ The CPP modules at 42 Wolfsburg teach Object-Oriented Programming in C++ step by
 
 Memory allocation, pointers to members, references and switch statements
 
-
 ---
 
 ## Rules
@@ -23,8 +22,8 @@ Memory allocation, pointers to members, references and switch statements
 ### Forbidden
 
 - C++11 (and derived forms) and Boost libraries
-- *printf(), *alloc() and free()
-- STL containers and algorithms (vector, list, map, etc.)
+- `*printf()`, `*alloc()` and `free()`
+- STL containers and algorithms (`vector`, `list`, `map`, etc.)
 
 ---
 
